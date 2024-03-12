@@ -67,6 +67,7 @@ body{
     text-align: center;
     font-size: 1.8rem;
     font-weight: 400;
+    text-decoration: none;
 }
 .btn:hover{
     opacity: 0.9;
@@ -123,6 +124,7 @@ body{
     justify-content: end;
     margin-top: 9.5vh;
 }
+/* tt bình thường */
 .header__image--large{
     width: 50%;
     height: 67.5vh;
@@ -133,7 +135,105 @@ body{
     height: 51.25vh;
     margin-left: -6px
 }
+/* khi hover vào */
+/* .header__image--small:hover .header_image--large{
+    width: 210px;
+    height: 410px;
+    margin-right: -6px;
+}
+.header__image--small:hover{
+    width: 50%;
+    height: 67.5vh;
+} */
 .header__image{
     object-fit: cover;
     border-radius: 6px;
+}
+/* SERVICE */
+.service{
+    padding: 170px 0;
+}
+/* title-service */
+.title-heading{
+    color: var(--color1);
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+.title-service__heading{
+    text-align: center;
+}
+.title-service__desc{
+    width: 468px;
+    color: #575F66;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+    /* LƯU Ý: CẦN THÊM MARGIN ĐỂ CĂN CHO KHỐI NÀY RA GIỮA, CHỨ TEXT-ALIGN CHỈ CĂN ĐƯỢC NỘI DUNG TRONG 
+    THẺ P THÔI, KH CĂN ĐƯỢC CẢ KHỐI */
+    margin: 18px auto;
+}
+/* content-service */
+.content-service{
+    display: flex;
+    margin-top: 70px;
+    align-items: center;
+    justify-content: center;
+}
+.content-service__image{
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.content-service__item{
+    margin-left: 130px;
+}
+.service-item{
+    display: flex;
+    align-items: center;
+    padding: 21px;
+    transition: 0.25s;
+}
+.service-item:hover{
+    border-radius: 10px;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+/* để khi sờ vào cái item thì cái răng bên trong cũng hover theo thì làm như sau */
+.service-item:hover .service-item__icon{
+    background-color: var(--color-2);
+    color: #fff;
+}
+.service-item__title{
+    color: var(--color-1);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.service-item__desc{
+    margin-top: 8px;
+    color: #575F66;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.75;
+    width: 308px;
+}
+.service-item__icon{
+    margin-right: 19px;
+    color: var(--color-1);
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: #EFF6FD;
+    /* để ko bị co lại */
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s;
+}
+.btn-service{
+    margin-top: 55px;
 }
