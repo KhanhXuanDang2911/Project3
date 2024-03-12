@@ -1,10 +1,139 @@
 *{
     box-sizing: border-box;
 }
+:root{
+    --color-1: #10375C;
+    --color-2: #2E80CE;
+}
 html{
     font-size: 62.5%;
 }
 body{
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
+}
+.main-content{
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+.header{
+    height: 100vh;
+    background-color: var(--color-1);
+}
+.header-top{
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header a{
+    text-decoration: none;
+}
+.navbar__list{
+    display: flex;
+}
+.navbar__link, .action__btn--log-in{
+    color: #C9D2DA;
+    padding: 8px 21px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75
+}
+.navbar__link--active::before{
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    bottom: 2px;
+    right: 6px;
+}
+.navbar__link:hover, .navbar__link--active{
+    color: #FFFFFF;
+    text-shadow: 1px 0 0 currentColor;
+}
+.btn{
+    display: inline-block;
+    min-width: 205px;
+    /* khi làm button thì nhớ là dùng line-height thay height để nó căn giữa */
+    line-height: 60px;
+    border-radius: 999px;
+    background: var(--color-2);
+    color: #FFF;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+.action__btn--sign-up{
+    min-width: 104px;
+    line-height: 44px;
+    margin-left: 7px;
+    font-size: 16px;
+}
+/* HERO */
+.header-hero{
+    display: flex;
+    align-items: center;
+}
+/* hero-content */
+.header-hero__content{
+    width: 44%;
+    margin-top: 12vh;
+}
+.hero__heading{
+    color: #FFF;
+    font-size: 6.5rem;
+    font-weight: 600;
+    line-height: 1.14;
+    letter-spacing: -1.4px;
+}
+.hero__desc{
+    color: #C9D2DA;
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 1.67;
+    margin-top: 22px;
+}
+.hero__action{
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+}
+.action__phone{
+    margin-left: 38px;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67
+}
+/* hero-media */
+.header-hero__media{
+    /* chiếm hết 56% còn lại */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 9.5vh;
+}
+.header__image--large{
+    width: 50%;
+    height: 67.5vh;
+    z-index: 1;
+}
+.header__image--small{
+    width: 32%;
+    height: 51.25vh;
+    margin-left: -6px
+}
+.header__image{
+    object-fit: cover;
+    border-radius: 6px;
 }
