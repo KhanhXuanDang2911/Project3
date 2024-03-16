@@ -340,6 +340,8 @@ box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
 /* our-team */
 .our-team{
     margin-bottom: 170px;
+}
+.our-team-top{
     text-align: center;
 }
 .our-team__btn{
@@ -395,4 +397,49 @@ box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
 .btn--next:hover{
     color: #FFF;
     background-color: var(--color-2);
+}
+.our-team-next{
+    text-align: center;
+}
+/* download */
+.download{
+    margin-bottom: 170px;
+}
+.download-media{
+    position: relative;
+}
+.download-phone{
+    position: absolute;
+    left: 70px;
+}
+.download-phone__image{
+    object-fit: cover;
+}
+.download-empty{
+    height: 95px;
+}
+.download-content{
+    height: 427px;
+    border-radius: 4px;
+    background: #2E80CE;
+    display: flex;
+    align-items: center;
+}
+.download-content-block{
+    margin-left: 514px;
+}
+.download-heading{
+    color: #FFF;
+    width: 489px;
+}
+.download-desc{
+    color: #FFF;
+    margin-right: 70px;
+    margin-top: 18px;
+}
+.download-logo{
+    margin-top: 38px;
+}
+.download-logo__android{
+    margin-right: 28px;
 }
