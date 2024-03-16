@@ -165,16 +165,19 @@ body{
 .title-service__heading{
     text-align: center;
 }
-.title-service__desc{
-    width: 468px;
+.title-desc{
     color: #575F66;
-    text-align: center;
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.67;
+}
+.title-service__desc{
+    width: 468px;
     /* LƯU Ý: CẦN THÊM MARGIN ĐỂ CĂN CHO KHỐI NÀY RA GIỮA, CHỨ TEXT-ALIGN CHỈ CĂN ĐƯỢC NỘI DUNG TRONG 
     THẺ P THÔI, KH CĂN ĐƯỢC CẢ KHỐI */
     margin: 18px auto;
+    text-align: center;
+
 }
 /* content-service */
 .content-service{
@@ -248,10 +251,6 @@ body{
 .work-head__desc{
     margin-top: 18px;
     width: 468px;
-    color: #575F66;
-    font-size: 1.8rem;
-    font-weight: 300;
-    line-height: 1.67;
 }
 /* work-list-item */
 .work-list-item{
@@ -295,4 +294,105 @@ body{
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75
+}
+/* about */
+.about{
+    margin: 170px 0px;
+    padding-bottom: 121px;
+}
+.about-content{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.about-media{
+    width: 60%;
+}
+.about-infor{
+    width: 40%;
+}
+.about-media__pic{
+    flex-shrink: 0;
+    border-radius: 6px;
+box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+}
+.about-media__pic-large{
+    width: 512px;
+    height: 370px;
+    object-fit: cover;
+}
+.about-media__pic-small{
+    width: 332px;
+    height: 370px;
+    object-fit: cover;
+    /* nên dùng absolute để đưa ra khỏi luồng thông thường, cắt đi khoảng trống khi 2 ảnh ở 2 dòng k như mong muốn */
+    /* position: relative; */
+    position: absolute;
+    top: 121px;
+    left: 238px;
+}
+.about-desc{
+    margin-top: 18px;
+}
+.about__btn--learn-more{
+    margin-top: 38px;
+}
+/* our-team */
+.our-team{
+    margin-bottom: 170px;
+    text-align: center;
+}
+.our-team__btn{
+    display: inline-block;
+    margin-top: 38px;
+}
+.our-team-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 34px;
+}
+.our-team-item{
+    border-radius: 6px;
+    background: #EAF6FF;
+    margin-top: 70px;
+    border: 10px #EAF6FF solid;
+    transition: 0.25s;
+}
+.our-team-item:hover{
+    transform: translateY(-16px);
+    border: 10px var(--color-2) solid;
+}
+.our-team-item__pic{
+    object-fit: cover;
+}
+.our-team-item__name{
+    color: var(--color-1);
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.75;
+    margin-top: 12px;
+}
+.our-team-item__hospital{
+    color: #575F66;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.86;
+}
+.btn--next{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-top: 38px;
+    color: #575F66;
+    border: 1px solid #575F66;
+}
+.btn--next-left{
+    margin-right: 18px;
+}
+.btn--next:hover{
+    color: #FFF;
+    background-color: var(--color-2);
 }
