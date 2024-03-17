@@ -524,3 +524,30 @@ box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
 .event-news__more:hover{
     color: var(--color-2);
 }
+/* appointment */
+.appointment{
+    padding: 100px 178px;
+    margin-bottom: 170px;
+    background-color: #F6FBFF;
+}
+.appointment-block{
+    text-align: center;
+}
+.appointment-desc{
+    width: 617px;
+    margin: 18px auto 0px;
+}
+.appointment__btn{
+    /* vì thẻ a đã set inline-block nên nó xem như nội dung văn bản luôn nên có thể căn giữa khối 
+    .appointment-block, nhưng những khối block thì ko thể căn giữa được */
+    margin-top: 38px;
+    /* đặc biệt rằng khối a inline block kh thể dùng margin: auto, k hiểu tại sao @@ */
+}
+.appointment-heading::after{
+    content: "";
+    display: block;
+    width: 136px;
+    height: 2px;
+    background-color: var(--color-2);
+    margin: 18px auto 0;
+}
