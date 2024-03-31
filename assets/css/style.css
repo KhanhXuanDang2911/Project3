@@ -57,6 +57,68 @@ body{
     color: #FFFFFF;
     text-shadow: 1px 0 0 currentColor;
 }
+/*-------------------navbar-sub-------------------*/
+.navbar__item{
+    position: relative;
+}
+.navbar__sub
+{
+    width: 250px;
+    position: absolute;
+    background: #fff;
+    right: -57px;
+    left: 10px;
+    top: 30px;
+    display: none;
+}
+.navbar__sub--item{
+    display: block;
+    padding: 15px;
+    color: var(--color-1);
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #fff;
+    transition: 0.25s;
+}
+.navbar__sub--item:hover{
+    color: #f04b0d;
+    background-color: #e4e0e0;
+}
+.navbar__sub--item:last-child{
+    border-bottom: none;
+}
+.navbar__item--has-child:hover .navbar__sub{
+    display: block;
+    -webkit-animation: slide-down 2.1s ease-out; 
+    -moz-animation: slide-down 2.5s ease-out; 
+}
+@-webkit-keyframes slide-down { 
+    0% { 
+        opacity: 0; 
+    } 
+
+    100% { 
+        opacity: 1; 
+    } 
+} 
+@-moz-keyframes slide-down { 
+    0% { 
+        opacity: 0; 
+    } 
+
+    100% { 
+        opacity: 1; 
+    } 
+} 
+.navbar__item--has-child .navbar__link::after
+{
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    content: "\f0d7";
+    position: absolute;
+    top: -1px;
+    right: 0px;
+}
+/* ---------------------------------------------- */
 .btn{
     display: inline-block;
     min-width: 205px;

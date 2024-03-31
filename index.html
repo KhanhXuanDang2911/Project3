@@ -33,27 +33,35 @@
         rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<body style="height: 10000px">
+<body>
     <header class="header">
         <div class="main-content">
             <div class="header-top fixed">
                 <a href="#!"><img src="./assets/img/logo.svg" alt="" class="logo"></a>
                 <nav class="header-top__navbar">
                     <ul class="navbar__list">
-                        <li class="navbar__item">
+                        <li class="navbar__item navbar__item--has-child">
                             <a href="#!" class="navbar__link navbar__link--active">Home</a>
+                            <ul class="navbar__sub">
+                                <li"><a href="#!" class="navbar__sub--item">HOME 01</a>
                         </li>
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link">Service</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link">About</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link">Doctors</a>
-                        </li>
+                        <li"><a href="#!" class="navbar__sub--item">Home 02</a></li>
+                            <li"><a href="#!" class="navbar__sub--item">Home 03</a></li>
+                                <!-- <li"><a href="#!" class="navbar__sub--item">Home1</a></li> -->
+                    </ul>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#!" class="navbar__link">Service</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#!" class="navbar__link">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#!" class="navbar__link">Doctors</a>
+                    </li>
                     </ul>
                 </nav>
                 <div class="header-top__action">
