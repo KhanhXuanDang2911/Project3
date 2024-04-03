@@ -1,0 +1,132 @@
+/* PC */
+@media (min-width: 992px){
+
+}
+
+/* Tablet & mobile là những gì mobile và tablet chung */
+@media (max-width: 991.98px){
+    /* 1. ẩn thanh navbar */
+    .header-top__navbar .navbar__list{
+        display: none;
+    }
+
+    /* 2. chuyển logo vào giữa */
+    .header-top{
+        position: relative;
+    }
+    .header-top .logo{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* tạo thêm biểu tượng menu */
+    .header-menu-icon{
+        position: absolute;
+        top: 43px;
+        left: 26px;
+        color: #FFF;
+        width: 24px;
+    }
+    /* 4. overlay */
+    .menu-overlay{
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.3);
+        /* cách 0 ở 4 hướng */
+        inset: 0;
+        /* để cho nó nằm trên hết các phần từ khác (ảnh, video...) */
+        z-index: 1;
+        /* làm sáng lại nhưng không click vào được các phần tử ngoài */
+        /* opacity: 0; */
+        /* làm cho có thể click ở ngoài */
+        visibility: hidden;
+        transition: 0.5s;
+    }
+    .checkbox-menu:checked ~ .menu-overlay{
+        /* opacity: 1; */
+        visibility: visible;
+    }
+    .menu-drawer{
+        position: fixed;
+        inset: 0% 40% 0% 0%;
+        background-color: #2e1919;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: 0.5s ease-in-out;
+    }
+    .checkbox-menu:checked ~ .menu-drawer{
+        transform: translateX(0%);
+    }
+    /* xóa gạch chân dưới các navbar_link*/
+    a{
+        text-decoration: none;
+    }
+    .navbar__item .navbar__link{
+        display: block;
+        text-align: left;
+    }
+    .navbar__link:hover{
+        background-color: #00ffff37;
+    }
+    /* xóa dấu chấm đầu dòng thẻ ul */
+    .navbar__item{
+        list-style-type: none;
+    }
+    /* điều chỉnh menu top (logo và close-icon) */
+    .menu-drawer__top{
+        display: flex;
+        padding: 24px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-drawer__close{
+        width: 24px;
+        color: #FFF;
+    }
+    /* điều chỉnh thanh navbar_sub (dropdown) */
+    /* điều chỉnh lại màu nền và căn vị trí khối sub cho hợp lý */
+    .navbar__sub{
+        display: none;
+        background-color: #2e1919;
+        margin-left: 20px;
+        width: 100%;
+    }
+    /* nếu chiều rộng của khối sub vượt quá khối .menu-drawer thì ẩn đi */
+    #menu-navbar--mobile-tablet{
+        overflow: hidden;
+        padding-left: 3px;
+        padding-top: 16px;
+    }
+    /* đưa chữ về lại màu trắng */
+    .navbar__sub--item{
+        color: #FFF;
+    }
+    /* đổi lại hiệu ứng khi hover vào của các HOME 01 02 03 04 */
+    .navbar__sub--item:hover{
+        background-color: #00ffff37;
+        color: #FFF;
+    }
+    /* khi hover vảo mũi tên thì sổ xuống */
+    .navbar__item--has-child:hover .navbar__sub
+    {
+        position: static;
+    }
+    /* chỉnh lại nút mũi tên */
+    .fa-sort-down{
+        top: 9px;
+        left: calc(100% - 42px);
+        cursor: pointer;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px){
+
+}
+
+
+/* Mobile */
+
+@media (min-width: 576px) and (max-width: 767.98px){
+
+}

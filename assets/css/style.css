@@ -65,7 +65,7 @@ body{
 {
     width: 250px;
     position: absolute;
-    background: #fff;
+    background-color: #fff;
     right: -57px;
     left: 10px;
     top: 30px;
@@ -77,7 +77,6 @@ body{
     color: var(--color-1);
     font-size: 14px;
     font-weight: 500;
-    background-color: #fff;
     transition: 0.25s;
 }
 .navbar__sub--item:hover{
@@ -89,8 +88,8 @@ body{
 }
 .navbar__item--has-child:hover .navbar__sub{
     display: block;
-    -webkit-animation: slide-down 2.1s ease-out; 
-    -moz-animation: slide-down 2.5s ease-out; 
+    -webkit-animation: slide-down 1s ease-out; 
+    -moz-animation: slide-down 1s ease-out; 
 }
 @-webkit-keyframes slide-down { 
     0% { 
@@ -110,13 +109,14 @@ body{
         opacity: 1; 
     } 
 } 
-.navbar__item--has-child .navbar__link::after
-{
-    font-family: "Font Awesome 5 Free"; font-weight: 900;
-    content: "\f0d7";
+.navbar__link{
+    position: relative;
+}
+.fa-sort-down{
+    color: #FFF;
     position: absolute;
-    top: -1px;
-    right: 0px;
+    top: 5px;
+    left: calc(100% - 12px)
 }
 /* ---------------------------------------------- */
 .btn{
