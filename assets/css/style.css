@@ -246,10 +246,12 @@ body{
     display: flex;
     margin-top: 70px;
     align-items: center;
-    justify-content: center;
+}
+.content-service__figure{
+    width: 50%;
 }
 .content-service__image{
-    width: 570px;
+    width: 100%;
     height: 570px;
     object-fit: cover;
     border-radius: 12px;
@@ -379,19 +381,9 @@ body{
 box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
 }
 .about-media__pic-large{
-    width: 512px;
-    height: 370px;
+    width: 90%;
+    height: 410px;
     object-fit: cover;
-}
-.about-media__pic-small{
-    width: 332px;
-    height: 370px;
-    object-fit: cover;
-    /* nên dùng absolute để đưa ra khỏi luồng thông thường, cắt đi khoảng trống khi 2 ảnh ở 2 dòng k như mong muốn */
-    /* position: relative; */
-    position: absolute;
-    top: 121px;
-    left: 238px;
 }
 .about-desc{
     margin-top: 18px;
@@ -428,6 +420,7 @@ box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
 }
 .our-team-item__pic{
     object-fit: cover;
+    width: 100%;
 }
 .our-team-item__name{
     color: var(--color-1);
@@ -488,11 +481,11 @@ box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
     align-items: center;
 }
 .download-content-block{
-    margin-left: 514px;
+    margin-left: 45%;
 }
 .download-heading{
     color: #FFF;
-    width: 489px;
+    margin-right: 70px;
 }
 .download-desc{
     color: #FFF;
@@ -512,6 +505,7 @@ box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
 .event-content{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .event-header{
     width: 40%;

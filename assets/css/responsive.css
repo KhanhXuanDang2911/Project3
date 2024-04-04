@@ -167,7 +167,7 @@
         flex-direction: column;
     }
     .content-service__image{
-        width: 80%;
+        width: 100%;
         /* chỉ có display: block mới áp dụng được margin: 0 auto nên khi có cái nào ko dùng dc margin 0 auto để căn giữa thì 
         chắc chắn đó là thẻ img (inline) hoặc thẻ a (có thể căn bằng dùng text-align: center;) */
         display: block;
@@ -175,6 +175,9 @@
     }
     .service-item__desc{
         width: 100%;
+    }
+    .content-service__figure{
+        width: 80%;
     }
 
     /* work */
