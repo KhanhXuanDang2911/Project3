@@ -1,6 +1,8 @@
 /* PC */
 @media (min-width: 992px){
-
+    .header-menu-icon, .menu-drawer__close, .menu-drawer{
+        display: none;
+    }
 }
 
 /* Tablet & mobile là những gì mobile và tablet chung */
@@ -116,14 +118,157 @@
         left: calc(100% - 42px);
         cursor: pointer;
     }
-}
+    /* hero */
+    .header-hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
+    .header-hero__content{
+    width: 74%;
+    margin-top: 76px;
+    margin-bottom: 76px;
+    text-align: center;
+    order: 2;
+    }
+    .hero__action{
+    margin-top: 38px;
+    display: block;
+    }
+    .header-hero__media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 76px;
+    width: 84%;
+    order: 1;
+    }
+    .header__image--large {
+        width: 330px;
+        height: 540px;
+        z-index: 1;
+    }
+    .header__image--small {
+        width: 210px;
+        height: 410px;
+        margin-left: -6px;
+    }
+    .content-service__item{
+        margin-left: 0px;
+        margin-top: 55px;
+        text-align: center;
+        width: 80%;
+    }
+    .service-item__infor{
+        text-align: start;
+    }
+    /* service */
+    .content-service{
+        flex-direction: column;
+    }
+    .content-service__image{
+        width: 80%;
+        /* chỉ có display: block mới áp dụng được margin: 0 auto nên khi có cái nào ko dùng dc margin 0 auto để căn giữa thì 
+        chắc chắn đó là thẻ img (inline) hoặc thẻ a (có thể căn bằng dùng text-align: center;) */
+        display: block;
+        margin: 0 auto;
+    }
+    .service-item__desc{
+        width: 100%;
+    }
 
+    /* work */
+    .work-head{
+        text-align: center;
+    }
+    .work-head__desc {
+        width: 50%;
+        margin: 18px auto 0
+    }
+    .work-list-item{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 42px;
+    }
+    .work-item__content {
+        margin: 28px 28px;
+    }
+    /* about */
+    .about-content{
+        flex-direction: column;
+    }
+    .about-media__pic-small{
+        display: none;
+    }
+    .about-media__pic-large {
+        width: 90%;
+        height: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    .about-media{
+        width: 100%;
+    }
+    .about-infor{
+        margin-top: 70px;
+        width: 90%;
+        text-align: center;
+    }
+    /* .our-team */
+    .our-team-list {
+        margin-top: 60px;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+    }
+    .our-team-item__pic {
+        margin: 0 auto;
+        display: block;
+    }
+    .our-team-item{
+        margin-top: 0px;
+    }
+    /* .download */
+    .download-empty{
+        display: none;
+    }
+    .download-phone__image {
+        display: none;
+    }
+    .download-content-block{
+        padding: 70px;
+        margin: auto;
+    }
+    .download-content{
+        /* loại bỏ thuộc tính height */
+        height: auto;
+    }
+    .download-heading{
+        width: auto;
+    }
+    /* event */
+    .event-content{
+        flex-direction: column;
+    }
+    .event-header{
+        order: 2;
+    }
+    .event-news{
+        order: 1;
+        width: 70%;
+    }
+    .event-header {
+        width: 90%;
+        text-align: center;
+        margin-top: 40px;
+    }
+    /* appointment */
+    .appointment-desc {
+        width: 100%;
+    }
+}
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991.98px){
-
-}
-
+    /* .our-team */
 
 /* Mobile */
 
