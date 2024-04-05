@@ -196,6 +196,9 @@
         margin: 28px 28px;
     }
     /* about */
+    .about {
+        margin: 70px 0px;
+    }
     .about-content{
         flex-direction: column;
     }
@@ -272,9 +275,124 @@
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991.98px){
     /* .our-team */
-
+    .cta-mobile{
+        display: none;
+    }
+}
 /* Mobile */
 
-@media (min-width: 576px) and (max-width: 767.98px){
-
+@media (max-width: 767.98px){
+    .cta-mobile{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        margin: 8px 25px;
+        border-top: 1px solid #C9D2DA;
+    }
+    .action__btn--log-in{
+        text-align: start;
+        padding: 8px 0px;
+    }
+    .menu-drawer{
+        inset: 0% 35% 0% 0%;
+    }
+    .header-top__action{
+        display: none;
+    }
+    .header-menu-icon{
+        top: 17px;
+    }
+    .header-top .logo {
+        left: 88%;
+    }
+    .header__image--small{
+        display: none;
+    }
+    .header__image--large {
+        width: 100%;
+        height: 400px;
+    }
+    .hero__heading{
+        font-size: 4.5rem;
+    }
+    .header-hero__content {
+        width: 80%;
+    }
+    .action__phone{
+        display: block;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .service {
+        padding: 85px 0px;
+    }
+    .title-service__desc {
+        width: 100%;
+    }
+    .content-service__image {
+        height: 350px;
+    }
+    .content-service__item {
+        width: 90%;
+    }
+    .service__item-list ~ .service__item-list{
+        margin-top: 20px;
+    }
+    .work-item__content {
+        margin: 18px;
+    }
+    .work-head__desc {
+        width: 80%;
+    }
+    .about {
+        margin: 100px 0px;
+        padding-bottom: 50px;
+    }
+    .our-team-list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .download-content-block{
+        padding: 30px;
+    }
+    .download-heading{
+        margin-right: 30px;
+        font-size: 4rem;
+    }
+    .download-desc {
+        margin-right: 30px;
+    }
+    .event{
+        margin-bottom: 100px;
+    }
+    .event-news{
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 40px;
+    }
+    .title-heading{
+        font-size: 2.5rem;
+    }
+    .event__read-blog{
+        font-size: 16px;
+    }
+    .event-next .btn--next {
+        width: 30px;
+        height: 30px;
+    }
+    .event-next .btn--next-left{
+        margin-right: 12px;
+    }
+    .appointment{
+        padding: 75px 15px;
+    }
+    .title-heading {
+        font-size: 3.5rem;
+    }
+    .download-logo__android {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .download-icon{
+        width: 135px;
+    }
 }
